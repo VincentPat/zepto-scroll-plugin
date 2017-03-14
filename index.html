@@ -27,6 +27,7 @@
     <script src="zepto-scroll-to.js"></script>
 </head>
 <body>
+    <button id="btn">滚动到200px高</button>
     <div class="container">
         <div class="block"></div>
         <div class="block"></div>
@@ -69,5 +70,10 @@
         <div class="block"></div>
         <div class="block"></div>
     </div>
+    <script>
+    $("#btn").on("click", function() {
+        $(".container").scrollTo(200, 500);
+    });
+    </script>
 </body>
 </html>
